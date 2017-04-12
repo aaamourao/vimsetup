@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/adriano/WorkSpace/Blog/spiralcode-frontend'
+let g:netrw_dirhist_2='/home/adriano/WorkSpace/Blog/spiralcode-frontend/app/templates/blog'
+let g:netrw_dirhist_3='/home/adriano/WorkSpace/Blog/spiralcode-frontend/app/templates'
+let g:netrw_dirhist_4='/home/adriano/WorkSpace/Blog/spiralcode-frontend/app/controllers'
+let g:netrw_dirhist_5='/home/adriano/WorkSpace/Blog/spiralcode-frontend/app/models'

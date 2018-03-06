@@ -1,6 +1,15 @@
-[submodule "bundle/syntax"]
-	path = bundle/syntax
-	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
 [submodule "bundle/OpenCL-C-syntax-highlighting"]
 	path = bundle/OpenCL-C-syntax-highlighting
 	url = https://github.com/vim-scripts/OpenCL-C-syntax-highlighting
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = git@github.com:Raimondi/delimitMate.git
+[submodule "bundle/twilight"]
+	path = bundle/twilight
+	url = https://github.com/vim-scripts/twilight
+[submodule "bundle/moonshine"]
+	path = bundle/moonshine
+	url = git@github.com:KKPMW/moonshine-vim.git
+[submodule "bundle/syntax"]
+	path = bundle/syntax
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git

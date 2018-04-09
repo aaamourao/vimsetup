@@ -4,12 +4,18 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = git@github.com:Raimondi/delimitMate.git
-[submodule "bundle/twilight"]
-	path = bundle/twilight
-	url = https://github.com/vim-scripts/twilight
-[submodule "bundle/moonshine"]
-	path = bundle/moonshine
-	url = git@github.com:KKPMW/moonshine-vim.git
 [submodule "bundle/syntax"]
 	path = bundle/syntax
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "bundle/vim-airline-themes"]
+	path = bundle/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "bundle/vim-easytags"]
+	path = bundle/vim-easytags
+	url = git@github.com:xolox/vim-easytags.git
+[submodule "bundle/vim-misc"]
+	path = bundle/vim-misc
+	url = git@github.com:xolox/vim-misc.git

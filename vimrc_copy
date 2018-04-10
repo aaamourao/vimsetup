@@ -1,0 +1,107 @@
+"
+" -------------------------------------------------------------------
+" -------------------------------------------------------------------
+" .vimrc by madc0w - madc0w [at] protonmail [dot] ch
+" -------------------------------------------------------------------
+" -------------------------------------------------------------------
+
+" basic setup params
+" -------------------------------------------------------------------
+
+" UTF-8
+set enc=utf-8
+set fenc=utf-8
+set termencoding=utf-8
+
+" terminal colors
+set t_Co=256
+
+" line numbers on left corner
+set number
+
+" disable vi compatibility
+set nocompatible
+
+" plugins installation hack
+execute pathogen#infect()
+
+" devel setup params
+" -------------------------------------------------------------------
+
+" highlight matching braces
+set showmatch
+
+" show existing tab with 2 spaces width
+set tabstop=4
+set softtabstop=4
+" when indenting with '>', use 2 spaces width
+set shiftwidth=4
+set expandtab
+
+" Standard is a Standard...
+set textwidth=80
+
+" highlight and indent
+syntax on
+filetype plugin indent on
+syn on se title
+
+" " badwolf color scheme
+" colorscheme badwolf
+" let g:badwolf_darkgutter = 1
+" let g:badwolf_tabline = 3
+" let g:badwolf_css_props_highlight = 1
+" let g:badwolf_html_link_underline = 0
+colorscheme onedark
+let g:onedark_termcolors=256
+
+" django templates
+au BufNewFile,BufRead *.html set filetype=htmldjango
+
+" C++ highlight
+"let g:cpp_experimental_template_highlight = 1
+let g:cpp_experimental_simple_template_highlight = 1
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_concepts_highlight = 1
+
+" Python highligh
+let python_highlight_all = 1
+" Haskell
+au BufEnter *.hs compiler ghc
+let g:haddock_browser="/usr/bin/firefox"
+
+" tagbar
+nmap <F8> :TagbarToggle<CR>
+let g:easytags_include_members = 1
+let g:easytags_autorecurse = 1
+let g:easytags_dynamic_files = 1
+
+" rooter
+let g:rooter_change_directory_for_non_project_files = 'current'
+nmap <F7> :Rooter<CR>
+
+" nerdtree
+nmap <F9> :NERDTree<CR>
+
+let g:clang_format#style_options = {
+            \ "AccessModifierOffset" : -4,
+            \ "AllowShortIfStatementsOnASingleLine" : "true",
+            \ "AlwaysBreakTemplateDeclarations" : "true",
+            \ "Standard" : "C++11"}
+
+let g:clang_format#code_style = "google"
+
+" map to <Leader>cf in C++ code
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+" if you install vim-operator-user
+autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
+" Toggle auto formatting:
+nmap <Leader>C :ClangFormatAutoToggle<CR>
+
+" vim airline status bar
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_theme='simple'

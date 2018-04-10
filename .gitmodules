@@ -19,3 +19,6 @@
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
 	url = git@github.com:xolox/vim-misc.git
+[submodule "bundle/onedark"]
+	path = bundle/onedark
+	url = git@github.com:joshdick/onedark.vim.git
